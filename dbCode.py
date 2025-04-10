@@ -1,15 +1,14 @@
-from Flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for
 import pymysql
 import creds
-from dbCode import *
-import pymysql.cursors
 import boto3
 
 def get_conn():
+    # To connect MySQL database
     return pymysql.connect(
-        host=creds.host,
-        user=creds.user,
-        passwor=creds.password,
+        host= creds.host,
+        user= creds.user, 
+        password = creds.password,
         db=creds.db,
         cursorclass=pymysql.cursors.DictCursor
     )
@@ -23,11 +22,7 @@ def execute_query(query, args=()):
         return rows
     finally:
         conn.close()
-
-app = Flask(__name__)
-
-@app.route("/")
-def index():
-    movies = get_list_of_dictionaries()
-    return render_template("index.html", results=movies)
-
+  
+# Driver Code
+if __name__ == "__main__" :
+    mysqlconnect()

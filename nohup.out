@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/home/ec2-user/ProjectOne/flaskapp.py", line 2, in <module>
+    from dbCode import *
+  File "/home/ec2-user/ProjectOne/dbCode.py", line 1, in <module>
+    from Flask import Flask, render_template, request, redirect, url_for
+ModuleNotFoundError: No module named 'Flask'
+ * Serving Flask app 'flaskapp'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.89.204:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 151-841-833
+198.7.192.217 - - [10/Apr/2025 16:55:02] "GET / HTTP/1.1" 200 -
