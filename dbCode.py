@@ -23,6 +23,5 @@ def execute_query(query, args=()):
     finally:
         conn.close()
   
-# Driver Code
 if __name__ == "__main__" :
     mysqlconnect()

@@ -1,0 +1,11 @@
+<h2>Ratings by User: {{ user_id }}</h2>
+
+{% if ratings %}
+  <ul>
+    {% for rating in ratings %}
+      <li>{{ rating.movie_name }} - {{ rating.rating }}/100</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No ratings found for this user.</p>
+{% endif %}

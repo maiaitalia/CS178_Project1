@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Movie List</title>
+    <title>Movie Recommendations</title>
 </head>
 <body>
-    <h1>Top 10 Movies</h1>
-    <ul>
-        {% for movie in results %}
-            <li>{{ movie['title'] }}</li>  <!-- Assuming 'title' is a column in your table -->
-        {% endfor %}
-    </ul>
-</body>
-</html>
+    <h1>Choose a Genre</h1>
+    <form action="/recommend" method="post">
+        <label for="genre">Genre:</label>
+        <select name="genre" id="genre">
+            {% for genre in genres %}
+                <option value="{{ genre['genre_name'] }}">{{ genre['genre_name'] }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Get Recommendations">

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Rating</title>
+</head>
+<body>
+    <h1>Rate a Movie</h1>
+    <form method="post">
+        <!-- Movie Information -->
+        <label for="movie_name">Movie Name:</label>
+        <input type="text" name="movie_name" id="movie_name" required><br>
+
+        <!-- Rating Information -->
+        <label for="rating">Rating (0-100):</label>
+        <input type="number" name="rating" id="rating" min="0" max="100" required><br>
+
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" id="user_id" required><br>
+
+        <button type="submit">Submit Rating</button>
+    </form>
+</body>
+</html>
+

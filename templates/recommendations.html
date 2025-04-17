@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Movies for Genre: {{ genres }}</h1>
+    <ul>
+        {% if recommendations %}
+            {% for movie in recommendations %}
+                <li>{{ movie['title'] }}</li>
+            {% endfor %}
+        {% else %}
+            <p>No recommendations found.</p>
+        {% endif %}
+    </ul>
+    <br>
+    <a href="/">Back to Genre Selection</a>
+</body>
+</html>

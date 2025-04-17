@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delete a Rating</title>
+</head>
+<body>
+    <h1>Delete Rating</h1>
+    <form action="{{ url_for('delete_rating') }}" method="post">
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" placeholder="Enter your User ID" required>
+        <br>
+        <label for="movie_name">Movie Name:</label>
+        <input type="text" name="movie_name" placeholder="Enter Movie Name" required>
+        <br><br>
+        <button type="submit">Delete Rating</button>
+    </form>
+</body>
+</html>
