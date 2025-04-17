@@ -5,8 +5,8 @@
 
 For this project, this Flask app utilizes a movie database that allows users to get recommendations based on genre and keep a rating system for movies they have seen.
 
-- **MySQL RDS database** :stores movie and genre information
-- **AWS DynamoDB table** :stores user-submitted ratings
+- **MySQL RDS database** : stores movie and genre information
+- **AWS DynamoDB table** : stores user-submitted ratings
 
 Users can:
 - Select a genre and receive movie recommendations
